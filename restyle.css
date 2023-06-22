@@ -28,6 +28,11 @@
 ------------------------------------------------------------------------------------------------- */
 
 
+.nav-1:hover{
+  color: red;
+}
+
+
 .sec-1{
     background: url('bg.png') no-repeat center;
     background-size: cover;
@@ -58,7 +63,7 @@ li:hover
 {
   transition: 1s;
   transform: scale(1.1, 1.1);
-
+  /* color: rgb(70, 21, 21); */
   
 }
 /* li:hover > li:not(:hover)
@@ -106,14 +111,14 @@ li:hover
 }
 .sec-btn-1:hover{
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  animation: buton 2s ease-in-out;
+  animation: buton 1s ease-in-out;
 }
 @keyframes buton {
     0%, 100%{
         transform: translateY(0rem);
     }
     50%{
-        transform: translateY(-1.5rem);
+        transform: translateY(-7.5px);
     }
 }
 .sec-2-div{
@@ -147,7 +152,7 @@ li:hover
         transform: rotate(-345deg);
     }
     .sec-2-image{
-       width: 351px;
+       width: 341px;
        height: auto;
         animation: float 3s linear infinite;
     }
@@ -261,7 +266,8 @@ li:hover
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .sec-5-card:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 /* .last-card:hover{
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
@@ -621,7 +627,7 @@ color: #ff007a;
 
 
 .button-sec-9 {
-  padding: 1em 2em;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -633,7 +639,9 @@ color: #ff007a;
   position: relative;
   overflow: hidden;
   outline: 2px solid #ff007a;
+  
 }
+
 
 .button-sec-9:hover {
   color: #ffffff;
@@ -641,6 +649,7 @@ color: #ff007a;
   outline: 2px solid #ef4999;
   box-shadow: 4px 5px 17px -4px#ff007a;
 }
+
 
 .button-sec-9::before {
   content: "";
@@ -735,6 +744,67 @@ color: #ff007a;
 	align-items: stretch;
 	text-align: center;
 	transform: translateZ(90px);
+}
+
+
+
+.btn-sec-10-form {
+  font-family: inherit;
+  font-size: 18px;
+  background:linear-gradient(to top, #ff007a 0%, rgba(142, 0, 116, 1) 100%);
+
+  color: white;
+  padding: 0.6em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.btn-sec-10-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sec-10-form:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sec-10-form span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.btn-sec-10-form svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.btn-sec-10-form .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.btn-sec-10-form:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-sec-10-form:hover svg {
+  transform: rotate(45deg);
 }
 
 
